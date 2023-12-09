@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <title>Document</title>
+    <style>
+        label {
+display: block;
+margin:10px;
+font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+display: block;
+width: 96%;
+padding: 10px 0;
+border-radius: 5px;
+border: 1px solid #ccc;
+margin:10px;
+font-size: 16px;
+background-color: #f6f2f2;
+}
+
+button[type="submit"] {
+background-color: #4CAF50;
+color: #fff;
+padding: 10px;
+margin-left: 200px;
+border: none;
+border-radius: 5px;
+font-size: 16px;
+cursor: pointer;
+}
+         .modal{
+          position: fixed;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          display: flex;
+          visibility: hidden;
+          z-index: 15;
+          
+          
+      }
+      .modal__overlay{
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0,0, 0.4);
+      }
+      .modal_connent{
+          width: 500px;
+          height: 500px;
+          background-color : white;
+          border-radius: 5px;
+          margin: auto;
+          position: relative;
+          z-index: 30;
+          animation:  modalFadeIn ease .3s;
+         
+      }
+      
+      .open{
+          visibility: visible;
+      }
+      .xxx{
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          color: black;
+          cursor: pointer;
+          
+
+      }
+
+      .close{
+          visibility: hidden;
+      }
+
+
+      
+
+      .modal_Cart{
+          position: fixed;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          display: flex;
+          visibility: hidden;
+          z-index: 100;
+      }
+
+      .everlayy{
+          width: 100%;
+          height: 100%;
+          background-color:rgba(0, 0,0,0.4) ;
+          position: absolute  ;
+      }
+      .content_cart{
+          width: 800px;
+          height: 500px;
+          margin: auto;
+          background-color: white;
+          position: relative;
+          z-index: 30;
+          display: flex;
+
+      }
+    </style>
+</head>
+<body>
+    <button onclick="oppen()">ấn hiện liên</button>
+    <section class="container">
+        <div class="modal">
+          <div class="modal__overlay"></div>
+  
+          <div class="modal_connent">
+            <div class="xxx"><i class="fa-solid fa-x"></i></div>
+            <form id="animationr">
+              <h2>Đăng ký tài khoản</h2>
+              <label for="fullname">Họ và tên:</label>
+              <input type="text" id="fullname" name="fullname" required>
+  
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+  
+              <label for="password">Mật khẩu:</label>
+              <input type="password" id="password" name="password" required>
+  
+              <label for="confirm-password">Xác nhận mật khẩu:</label>
+              <input type="password" id="confirm-password" name="confirm-password" required>
+  
+              <label for="phone">Số điện thoại:</label>
+              <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+  
+              <button type="submit">Đăng ký</button>
+  
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <script>
+
+function oppen() {
+  event.preventDefault();
+  let hienthi2 = document.querySelector('.modal');
+  hienthi2.classList.add('open');
+}
+
+
+
+let xxx = document.querySelector('.xxx');
+xxx.addEventListener('click', closee);
+function closee() {
+  event.preventDefault();
+  let hienthi4 = document.querySelector('.modal');
+  hienthi4.classList.remove('open');
+}
+
+let modal = document.querySelector('.modal');
+
+modal.addEventListener('click', closee);
+
+let modal_connent = document.querySelector('.modal_connent');
+
+modal_connent.addEventListener('click', function (event) {
+  event.stopPropagation();
+})
+
+      </script>
+</body>
+</html>

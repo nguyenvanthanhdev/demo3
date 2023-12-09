@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+           .modal_Cart{
+          position: fixed;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          display: flex;
+          visibility: visible;
+          z-index: 100;
+      }
+
+      .everlayy{
+          width: 100%;
+          height: 100%;
+          background-color:rgba(0, 0,0,0.4) ;
+          position: absolute  ;
+      }
+      .content_cart{
+          width: 800px;
+          height: 500px;
+          margin: auto;
+          background-color: white;
+          position: relative;
+          z-index: 30;
+          display: flex;
+
+      }
+      .itemImg{
+          width: 50%;
+          height: 100%;
+
+          /* background-color: aqua; */
+      }
+      .itemImg_img{
+          width: 100%;
+          height: 80%;
+
+          /* background-color: yellow; */
+      }
+      .itemImg_img_deail{
+          width: 100%;
+          height: 20%;
+          /* background-color: blue; */
+          display: flex;
+
+      }
+      .itemImg_img_deail_1{
+          width: 20%;
+          height: 100%;
+ 
+      }
+      .content_cart_cart{
+          width: 50%;
+
+          height: 100%;
+         
+      }
+      .open_cart{
+          visibility: visible;
+      }
+      .x{
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          color: black;
+          cursor: pointer;
+          
+      }
+      .itemImg_img_deail{
+        cursor: pointer;
+      }
+      .content_cart_cart{
+        cursor: pointer;
+      }
+    </style>
+</head>
+<body>
+    <section class="modal_Cart">
+        <nav class="everlayy"></nav>
+        <nav class="content_cart">
+          <nav class="x"><i class="fa-solid fa-x"></i></nav>
+          <nav class="itemImg">
+            <nav class="itemImg_img">
+              <img src="image/pc1.webp" alt="" class="imgpc1" style="width: 100%;">
+            </nav>
+            <nav class="itemImg_img_deail">
+              <nav class="itemImg_img_deail_1">
+                <img id="img1" src="image/pc1.webp" alt="" style="width:90%;height: 90% ;padding: 5px;">
+              </nav>
+              <nav class="itemImg_img_deail_1">
+                <img id="img1" src="image/ctpc2.PNG" alt="" style="width:90%;height: 90% ;padding: 5px;">
+              </nav>
+              <nav class="itemImg_img_deail_1">
+                <img id="img1" src="image/ctpc3.PNG" alt="" style="width:90%;height: 90% ;padding: 5px;">
+              </nav>
+              <nav class="itemImg_img_deail_1">
+                <img id="img1" src="image/ctpc4.PNG" alt="" style="width:90%;height: 90% ;padding: 5px;">
+              </nav>
+              <nav class="itemImg_img_deail_1">
+                <img id="img1" src="image/ctpc5.PNG" alt="" style="width:90%;height: 90% ;padding: 5px;">
+              </nav>
+  
+            </nav>
+          </nav>
+          <div class="content_cart_cart">
+            <h3 style="font-size: 20px; font-weight: 800;" class="name">Áo thun HI Basic Fit nhiều màu-Rêu</h3>
+            <div style="color: red; font-weight: 800 ; padding-left: 90px;">
+              <p><span class="gia">99.000</span>đ</p>
+              <span
+                style="color: #acb2b0; text-decoration: line-through;font-size: 15px;font-weight: 400;margin-left: 10px">199.000đ</span>
+            </div>
+            <div style="width: 100%; height: 50px; display: flex; ">
+              <div>
+                <h6 style=" line-height: 50px;;font-size: 15px;padding:0px 20px;">Màu Sắc : </h6>
+              </div>
+              <div style="padding-right: 10px;">
+                <h6 style="border: 1px solid #acb2b0 ; line-height: 50px;;font-size: 15px;padding:0px 20px;">Trắng</h6>
+              </div>
+              <div style="padding-right: 10px;">
+                <h6 style="border: 1px solid #acb2b0; line-height: 50px;;font-size: 15px;padding:0px 20px;">Xanh</h6>
+              </div>
+              <div>
+                <h6 style="border: 1px solid #acb2b0; line-height: 50px;;font-size: 15px;padding:0px 20px;">Vàng</h6>
+              </div>
+            </div>
+            <br>
+            <br>
+            <div style="width: 100%; height: 50px; display: flex; ">
+              <div>
+                <h6 style=" line-height: 50px;;font-size: 15px;padding:0px 20px;">Size : </h6>
+              </div>
+              <div style="padding-right: 10px;">
+                <h6 style="border: 1px solid #acb2b0 ; line-height: 50px;;font-size: 15px;padding:0px 20px;">M</h6>
+              </div>
+              <div style="padding-right: 10px;">
+                <h6 style="border: 1px solid #acb2b0; line-height: 50px;;font-size: 15px;padding:0px 20px;">L</h6>
+              </div>
+              <div>
+                <h6 style="border: 1px solid #acb2b0; line-height: 50px;;font-size: 15px;padding:0px 20px;">S</h6>
+              </div>
+            </div>
+            <br>
+            <div style="display: flex; width: 100%; height: 30px;">
+              <div>
+                <h6 style=" line-height: 30px;;font-size: 15px;padding:0px 20px;">Số Lượng : </h6>
+              </div>
+              <div style="padding-right: 10px; margin-top: 40px;">
+                <input class="input_cart" style="padding: 10px ; width: 100px;" type="number" value="1" name="qi" max=""
+                  min="1">
+              </div>
+            </div>
+            <div style="margin: 100px 0px 0 50px ">
+              <button id="cart_button" style="padding: 20px; background-color: antiquewhite; cursor: pointer;">Thêm Vào
+                Giỏ
+                Hàng</button>
+              <button
+                style="padding: 20px; color: white; background-color: orangered; border: orangered; margin-left: 20px"
+                onclick=" hienthi344()">Mua
+                Ngay</button>
+            </div>
+  
+          </div>
+        </div>
+      </section>
+      
+</body>
+<script>
+    let img1 = document.querySelectorAll('#img1');
+img1.forEach(function (img12, value) {
+  img12.addEventListener('mousemove', function () {
+    let itemImg_img = document.querySelector('.itemImg_img>img').src = img12.src;
+  })
+
+});
+</script>
+</html>

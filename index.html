@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+    <!-- <header id="contaii" style="display: none">
+
+
+      <section class="account" style="background-color: aliceblue; height: 150px;">
+        <div class="logo">
+          <img style="margin-top: 30px; padding-left: 250px;" src="image/logo.webp" alt="">
+        </div>
+      </section>
+
+      <section class="menu2" style="margin-top:-100px;">
+        <ul>
+          <li> <a href="#" class="linkk">TRANG CHỦ</a> </li>
+          <li class="link-cha"><a href="#" onclick="sanpham()" class="linkk">SẢN PHẨM</a>
+            <ul class="link-con">
+              <li><a href="" onclick="hienthi()">ÁO THUN NAM</a></li>
+              <li><a href="" onclick="hienthi2()">ÁO KHOÁC NAM</a></li>
+              <li><a href="">QUẦN JEAN NAM</a></li>
+
+            </ul>
+
+          </li>
+          <li><a href="" class="linkk">SHOPEE MALL</a></li>
+          <li> <a href="" class="linkk">LAZADA MALL</a></li>
+          <li> <a href="" class="linkk">PHONG CÁCH SỐNG</a></li>
+          <li> <a href="" class="linkk">GIỚI THIỆU</a></li>
+          <li> <a href="" class="linkk">LIÊN HỆ</a></li>
+        </ul>
+      </section>
+      <section class="sum">
+        <div style="width: 100%; height: 100px;"></div>
+        <table>
+          <thead>
+            <tr style="color: white; background-color: orangered; width: 100%;height: 50px;">
+              <th>Sản Phẩm</th>
+              <th>Giá Sản Phẩm</th>
+              <th>Số Lượng</th>
+    
+            </tr>
+          </thead>
+    
+          <tbody>
+    
+          </tbody>
+    
+        </table>
+        <div style="width: 100%; height: px;"></div>
+        <div class="sum" style="width: 100%;">
+          <div class="td_cart"
+            style="width: 50%; margin:auto; text-align: center; font-size: 20px; font-weight: 800;background-color: aquamarine; ">
+            Tổng Tiền là : <span>0</span>đ
+          </div>
+        </div>
+       </section>
+    </header> -->
+     <header>
+        <div class="account">
+          <div class="tk">
+            <ul>
+              <li class="link-cha"><a href="#" class="linkk">Tài Khoản <i class="fa-solid fa-user"></i></a>
+                <ul class="link-con">
+                  <li><a href="" class="modal_open">Đăng Kí </a>
+                  </li>
+                  <li><a href="#">Đăng Nhập</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="logo">
+            <img src="image/logo.webp" alt="">
+          </div>
+          <div class="search">
+            <a href="#"> <i class="fa-solid fa-magnifying-glass"></i> Tìm kiếm </a> |
+            <a id="hienthi" href="#"><i class="fa-solid fa-cart-shopping"></i> Giỏ Hàng</a>
+          </div>
+        </div>
+  
+        <div class="menu2">
+          <ul>
+            <li> <a href="" class="linkk" >TRANG CHỦ</a> </li>
+            <li class="link-cha"><a href="" class="linkk">SẢN PHẨM</a>
+              <ul class="link-con">
+                <li><a href="" onclick="hienthi()">ÁO THUN NAM</a></li>
+                <li><a href="" onclick="hienthi2()">ÁO KHOÁC NAM</a></li>
+                <li><a href="">QUẦN JEAN NAM</a></li>
+  
+              </ul>
+  
+            </li>
+            <li><a href="" class="linkk">SHOPEE MALL</a></li>
+            <li> <a href="" class="linkk">LAZADA MALL</a></li>
+            <li> <a href="" class="linkk">PHONG CÁCH SỐNG</a></li>
+            <li> <a href="" class="linkk">GIỚI THIỆU</a></li>
+            <li> <a href="" class="linkk">LIÊN HỆ</a></li>
+          </ul>
+        </div> <br>
+        <div class="img_logo">
+          <img id="imgs" src="image/anhnen.webp" alt="">
+        </div>
+
+     </header>
+
+  <main class="all-content">
+    <section class="modal_Cart">
+      <div class="everlayy"></div>
+      <div class="content_cart">
+        <div class="x"><i class="fa-solid fa-x"></i></div>
+        <div class="itemImg">
+          <div class="itemImg_img">
+            <img src="image/pc1.webp" alt="" class="imgpc1" style="width: 100%;">
+          </div>
+          <div class="itemImg_img_deail">
+            <div class="itemImg_img_deail_1">
+              <img id="img1" src="image/pc1.webp" alt="" style="width:90%;height: 90% ;padding: 5px;">
+            </div>
+            <div class="itemImg_img_deail_1">
+              <img id="img1" src="image/ctpc2.PNG" alt="" style="width:90%;height: 90% ;padding: 5px;">
+            </div>
+            <div class="itemImg_img_deail_1">
+              <img id="img1" src="image/ctpc3.PNG" alt="" style="width:90%;height: 90% ;padding: 5px;">
+            </div>
+            <div class="itemImg_img_deail_1">
+              <img id="img1" src="image/ctpc4.PNG" alt="" style="width:90%;height: 90% ;padding: 5px;">
+            </div>
+            <div class="itemImg_img_deail_1">
+              <img id="img1" src="image/ctpc5.PNG" alt="" style="width:90%;height: 90% ;padding: 5px;">
+            </div>
+
+          </div>
+        </div>
+        <div class="content_cart_cart">
+          <h3 style="font-size: 20px; font-weight: 800;" class="name">Áo thun HI Basic Fit nhiều màu-Rêu</h3>
+          <div style="color: red; font-weight: 800 ; padding-left: 90px;">
+            <p><span class="gia">99.000</span>đ</p>
+            <span
+              style="color: #acb2b0; text-decoration: line-through;font-size: 15px;font-weight: 400;margin-left: 10px">199.000đ</span>
+          </div>
+          <div style="width: 100%; height: 50px; display: flex; ">
+            <div>
+              <h6 style=" line-height: 50px;;font-size: 15px;padding:0px 20px;">Màu Sắc : </h6>
+            </div>
+            <div style="padding-right: 10px;">
+              <h6 style="border: 1px solid #acb2b0 ; line-height: 50px;;font-size: 15px;padding:0px 20px;">Trắng</h6>
+            </div>
+            <div style="padding-right: 10px;">
+              <h6 style="border: 1px solid #acb2b0; line-height: 50px;;font-size: 15px;padding:0px 20px;">Xanh</h6>
+            </div>
+            <div>
+              <h6 style="border: 1px solid #acb2b0; line-height: 50px;;font-size: 15px;padding:0px 20px;">Vàng</h6>
+            </div>
+          </div>
+          <br>
+          <br>
+          <div style="width: 100%; height: 50px; display: flex; ">
+            <div>
+              <h6 style=" line-height: 50px;;font-size: 15px;padding:0px 20px;">Size : </h6>
+            </div>
+            <div style="padding-right: 10px;">
+              <h6 style="border: 1px solid #acb2b0 ; line-height: 50px;;font-size: 15px;padding:0px 20px;">M</h6>
+            </div>
+            <div style="padding-right: 10px;">
+              <h6 style="border: 1px solid #acb2b0; line-height: 50px;;font-size: 15px;padding:0px 20px;">L</h6>
+            </div>
+            <div>
+              <h6 style="border: 1px solid #acb2b0; line-height: 50px;;font-size: 15px;padding:0px 20px;">S</h6>
+            </div>
+          </div>
+          <br>
+          <div style="display: flex; width: 100%; height: 30px;">
+            <div>
+              <h6 style=" line-height: 30px;;font-size: 15px;padding:0px 20px;">Số Lượng : </h6>
+            </div>
+            <div style="padding-right: 10px; margin-top: 40px;">
+              <input class="input_cart" style="padding: 10px ; width: 100px;" type="number" value="1" name="qi" max=""
+                min="1">
+            </div>
+          </div>
+          <div style="margin: 100px 0px 0 50px ">
+            <button id="cart_button" style="padding: 20px; background-color: antiquewhite; cursor: pointer;">Thêm Vào
+              Giỏ
+              Hàng</button>
+            <button
+              style="padding: 20px; color: white; background-color: orangered; border: orangered; margin-left: 20px"
+              onclick=" hienthi344()">Mua
+              Ngay</button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="modal">
+        <div class="modal__overlay"></div>
+
+        <div class="modal_connent">
+          <div class="x"><i class="fa-solid fa-x"></i></div>
+          <form id="animationr">
+            <h2>Đăng ký tài khoản</h2>
+            <label for="fullname">Họ và tên:</label>
+            <input type="text" id="fullname" name="fullname" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Mật khẩu:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirm-password">Xác nhận mật khẩu:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+
+            <label for="phone">Số điện thoại:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+
+            <button type="submit">Đăng ký</button>
+
+          </form>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="content">
+      <div class="sp" style="width: 100%; height: 150px;">
+        <h2 class="title-Sp">
+          <a href=""> Sản Phẩm Bán Chạy</a>
+          <hr>
+          <span class="mini">
+            Những sản phẩm quần áo nam mới nhất, tuyệt vời nhất đã được HIDDLE cập nhật.
+          </span>
+        </h2>
+      </div>
+      <div class="imgfather" style="width: 100%; height: 300px; display: flex;">
+
+        <div id="img3" style="width: 100%; height: 300px; display: block;">
+          <div id="imgSp" style="display:flex; height: 300px;  ">
+
+            <div id="imgSp1" style="width: 18%; height: 100%; display: block;  position: relative">
+              <img src="image/a1.webp" style="width: 100%; height: 70%;;">
+              <a style="padding-left: 50px; text-decoration: none; font-size: 18px;" href="">Áo polo nam chính hãng </a>
+              <br> <br>
+              <span style="padding-left: 100px; color:red ; font-weight: 800;">290.000 đ</span>
+
+            </div>
+            <div id="imgSp1" style="width: 18%; height: 100%; display: block;">
+              <img src="image/a2.webp" style="width: 100%; height: 70%;">
+              <a style="padding-left: 50px; text-decoration: none; font-size: 18px;" href="">Áo polo nam chính hãng </a>
+              <br> <br>
+              <span style="padding-left: 100px; color:red ; font-weight: 800;">290.000 đ</span>
+            </div>
+            <div id="imgSp1" style="width: 18%; height: 100%; display: block;">
+              <img src="image/a3.webp" style="width: 100%; height: 70%;">
+              <a style="padding-left: 50px; text-decoration: none; font-size: 18px;" href="">Áo polo nam chính hãng </a>
+              <br> <br>
+              <span style="padding-left: 100px; color:red ; font-weight: 800;">290.000 đ</span>
+            </div>
+            <div id="imgSp1" style="width: 18%; height: 100%; display: block;">
+              <img src="image/a4.webp" style="width: 100%; height: 70%;">
+              <a style="padding-left: 50px; text-decoration: none; font-size: 18px;" href="">Áo polo nam chính hãng </a>
+              <br> <br>
+              <span style="padding-left: 100px; color:red ; font-weight: 800;">290.000 đ</span>
+            </div>
+            <div id="imgSp1" style="width: 18%; height: 100%; display: block;">
+              <img src="image/a5.webp" style="width: 100%; height: 70%;">
+              <a style="padding-left: 50px; text-decoration: none; font-size: 18px;" href="">Áo polo nam chính hãng </a>
+              <br> <br>
+              <span style="padding-left: 100px; color:red ; font-weight: 800;">290.000 đ</span>
+            </div>
+
+          </div>
+        </div>
+        <div id="img4" style="width: 100%; height: 300px; display: none;">
+          <div id="imgSp" style="display:flex; height: 300px;  ">
+
+            <div id="imgSp1" style="width: 18%; height: 100%; display: block;">
+              <img src="image/a6.webp" style="width: 100%; height: 70%;">
+              <a style="padding-left: 50px; text-decoration: none; font-size: 18px;" href="">Áo polo nam chính hãng </a>
+              <br> <br>
+              <span style="padding-left: 100px; color:red ; font-weight: 800;">290.000 đ</span>
+            </div>
+            <div id="imgSp1" style="width: 18%; height: 100%; display: block;">
+              <img src="image/a7.webp" style="width: 100%; height: 70%;">
+              <a style="padding-left: 50px; text-decoration: none; font-size: 18px;" href="">Áo polo nam chính hãng </a>
+              <br> <br>
+              <span style="padding-left: 100px; color:red ; font-weight: 800;">290.000 đ</span>
+            </div>
+            <div id="imgSp1" style="width: 18%; height: 100%; display: block;">
+              <img src="image/a8.webp" style="width: 100%; height: 70%;">
+              <a style="padding-left: 50px; text-decoration: none; font-size: 18px;" href="">Áo polo nam chính hãng </a>
+              <br> <br>
+              <span style="padding-left: 100px; color:red ; font-weight: 800;">290.000 đ</span>
+            </div>
+            <div id="imgSp1" style="width: 18%; height: 100%; display: block;">
+              <img src="image/a9.webp" style="width: 100%; height: 70%;">
+              <a style="padding-left: 50px; text-decoration: none; font-size: 18px;" href="">Áo polo nam chính hãng </a>
+              <br> <br>
+              <span style="padding-left: 100px; color:red ; font-weight: 800;">290.000 đ</span>
+            </div>
+            <div id="imgSp1" style="width: 18%; height: 100%; display: block;">
+              <img src="image/a10.webp" style="width: 100%; height: 70%;">
+              <a style="padding-left: 50px; text-decoration: none; font-size: 18px;" href="">Áo polo nam chính hãng </a>
+              <br> <br>
+              <span style="padding-left: 100px; color:red ; font-weight: 800;">290.000 đ</span>
+            </div>
+          </div>
+          <div>
+          </div>
+
+
+
+
+        </div>
+      </div>
+      <div class="sp" style="width: 100%; height: 100px; ">
+        <button class="bt1"
+          style="cursor: pointer;width: 40px;  height: 40px; border-radius: 50%; border: 1px solid orangered; "
+          onclick="hienthiimg0()">1</button>
+        <button class="bt2"
+          style="cursor: pointer;width: 40px; height: 40px; border-radius: 50%;border: 1px solid orangered"
+          onclick="hienthiimg()">2</button>
+
+      </div>
+      <div class="PC">
+        <h2 class="title-Sp">
+          <a href=""> Theo Phong Cách</a>
+          <hr>
+          <span class="mini">
+            Tủ đồ của HIDDLE đã chọn sẵn theo phong cách. Chọn và mặc ngay thôi!
+          </span>
+          <span class="mini" style="display: flex; ">
+
+            <p style="width:40px ; height:40px; background-color: orangered; border-radius:40px;margin: 40px 30px 0 0;">
+            </p>
+            <p style="width:40px ; height:40px; background-color: orangered; border-radius:40px;margin: 40px 30px 0 0;">
+            </p>
+            <p style="width:40px ; height:40px; background-color: orangered; border-radius:40px;margin: 40px 30px 0 0;">
+            </p>
+          </span>
+          <span class="mini" style="display: flex;">
+            <p style="margin: 100px 30px 0 0;font-size: 14px;">Đi chơi</p>
+            <p style="margin: 100px 30px 0 0; font-size: 14px; opacity: 0.5;">Đi Làm</p>
+            <p style="margin: 100px 30px 0 0; font-size: 14px; opacity: 0.5;">Cá Tính</p>
+          </span>
+        </h2>
+      </div>
+      <div class="PC-sp" style="width: 100%; display: flex;">
+        <div class='imgpc1' style="width:20%; height: 300px; margin:50px 0 0 100px ;">
+          <img src="image/pc1.webp" alt="" style="width: 100%; height: 250px;">
+          <a style=" font-size: 17px; line-height: 50px; text-decoration: none; padding-left: 30px; color: black;"
+            href="">Áo thun HI Basic màu rêu</a> <br>
+          <div style="color: red; font-weight: 800 ; padding-left: 90px;"> 99.000đ
+            <span
+              style="color: #acb2b0; text-decoration: line-through;font-size: 15px;font-weight: 400;margin-left: 10px">199.000đ</span>
+          </div>
+        </div>
+        <div class=imgpc1 style="width:20%; height: 300px; margin:50px 0 0 20px  ;">
+          <img src="image/pc23.webp" alt="" style="width: 100%; height: 250px;">
+          <a style=" font-size: 17px; line-height: 50px; text-decoration: none; padding-left: 30px; color: black;"
+            href="">Áo thun HI Basic màu trắng</a> <br>
+          <div style="color: red; font-weight: 800 ; padding-left: 90px;"> 99.000đ
+            <span
+              style="color: #acb2b0; text-decoration: line-through;font-size: 15px;font-weight: 400;margin-left: 10px">299.000đ</span>
+          </div>
+        </div>
+        <div class=imgpc1 style="width:20%; height: 300px; margin:50px 0 0 20px;">
+          <img src="image/pc3.webp" alt="" style="width: 100%; height: 250px;">
+          <a style=" font-size: 17px; line-height: 50px; text-decoration: none; padding-left: 30px; color: black;"
+            href="">Áo thun HI Basic logo xanh</a> <br>
+          <div style="color: red; font-weight: 800 ; padding-left: 90px;"> 99.000đ
+            <span
+              style="color: #acb2b0; text-decoration: line-through;font-size: 15px;font-weight: 400;margin-left: 10px">270.000đ</span>
+          </div>
+        </div>
+        <div class='imgpc1' style="width:20%; height: 300px; margin:50px 100px 0 20px">
+          <img src="image/pc4.webp" alt="" style="width: 100%; height: 250px;">
+          <a style=" font-size: 17px; line-height: 50px; text-decoration: none; padding-left: 30px; color: black;"
+            href="">Áo thun HI Basic Pocket</a> <br>
+          <div style="color: red; font-weight: 800 ; padding-left: 90px;"> 99.000đ
+            <span
+              style="color: #acb2b0; text-decoration: line-through;font-size: 15px;font-weight: 400;margin-left: 10px">250.000đ</span>
+          </div>
+        </div>
+      </div>
+      <div class="PC-sp" style="width: 100%; display: flex; margin-top: 30px;">
+        <div class='imgpc1' style="width:20%; height: 300px; margin:50px 0 0 100px ;">
+          <img src="image/pc5.webp" alt="" style="width: 100%; height: 250px;">
+          <a style=" font-size: 17px; line-height: 50px; text-decoration: none; padding-left: 30px; color: black;"
+            href="">Áo thun HI Basic màu rêu</a> <br>
+          <div style="color: red; font-weight: 800 ; padding-left: 90px;"> 99.000đ
+            <span
+              style="color: #acb2b0; text-decoration: line-through;font-size: 15px;font-weight: 400;margin-left: 10px">199.000đ</span>
+          </div>
+        </div>
+        <div class=imgpc1 style="width:20%; height: 300px; margin:50px 0 0 20px  ;">
+          <img src="image/pc6.webp" alt="" style="width: 100%; height: 250px;">
+          <a style=" font-size: 17px; line-height: 50px; text-decoration: none; padding-left: 30px; color: black;"
+            href="">Áo thun HI Basic màu trắng</a> <br>
+          <div style="color: red; font-weight: 800 ; padding-left: 90px;"> 99.000đ
+            <span
+              style="color: #acb2b0; text-decoration: line-through;font-size: 15px;font-weight: 400;margin-left: 10px">299.000đ</span>
+          </div>
+        </div>
+        <div class=imgpc1 style="width:20%; height: 300px; margin:50px 0 0 20px;">
+          <img src="image/pc7.webp" alt="" style="width: 100%; height: 250px;">
+          <a style=" font-size: 17px; line-height: 50px; text-decoration: none; padding-left: 30px; color: black;"
+            href="">Áo thun HI Basic logo xanh</a> <br>
+          <div style="color: red; font-weight: 800 ; padding-left: 90px;"> 99.000đ
+            <span
+              style="color: #acb2b0; text-decoration: line-through;font-size: 15px;font-weight: 400;margin-left: 10px">270.000đ</span>
+          </div>
+        </div>
+        <div class='imgpc1' style="width:20%; height: 300px; margin:50px 100px 0 20px">
+          <img src="image/pc8.webp" alt="" style="width: 100%; height: 250px;">
+          <a style=" font-size: 17px; line-height: 50px; text-decoration: none; padding-left: 30px; color: black;"
+            href="">Áo thun HI Basic Pocket</a> <br>
+          <div style="color: red; font-weight: 800 ; padding-left: 90px;"> 99.000đ
+            <span
+              style="color: #acb2b0; text-decoration: line-through;font-size: 15px;font-weight: 400;margin-left: 10px">250.000đ</span>
+          </div>
+        </div>
+      </div>
+      <div class="TL">
+        <h2 class="title-Sp" style="width: 100%; height: 50px; margin: 100px 0 50px 0;">
+          <a href=""> THANH LỊCH</a>
+          <hr>
+          <span class="mini">
+            Đơn giản đến kỳ công, những sản phẩm tôn lên sự tinh tế và quí phái. <br>
+            Dòng sản phẩm chú trọng đến chất liệu và đường nét.
+          </span>
+        </h2>
+      </div>
+      <div class="PC-sp" style="width: 100%; display: flex;">
+        <div class='imgpc1' style="width:20%; height: 300px; margin:50px 0 0 100px ;">
+          <img src="image/tl1.webp" alt="" style="width: 100%; height: 250px;">
+          <a style=" font-size: 17px; line-height: 50px; text-decoration: none; padding-left: 30px; color: black;"
+            href="">Áo polo nam hàng chính hãng</a> <br>
+          <div style="color: red; font-weight: 800 ; padding-left: 90px;"> 99.000đ
+            <span
+              style="color: #acb2b0; text-decoration: line-through;font-size: 15px;font-weight: 400;margin-left: 10px">199.000đ</span>
+          </div>
+          <div></div>
+        </div>
+        <div class=imgpc1 style="width:20%; height: 300px; margin:50px 0 0 5px  ;">
+          <img src="image/tl2.webp" alt="" style="width: 100%; height: 250px;">
+          <a style=" font-size: 17px; line-height: 50px; text-decoration: none; padding-left: 30px; color: black;"
+            href="">Áo polo nam cao cấp giá rẻ</a> <br>
+          <div style="color: red; font-weight: 800 ; padding-left: 90px;"> 99.000đ
+            <span
+              style="color: #acb2b0; text-decoration: line-through;font-size: 15px;font-weight: 400;margin-left: 10px">299.000đ</span>
+          </div>
+        </div>
+        <div class=imgpc1 style="width:20%; height: 300px; margin:50px 0 0 5px;">
+          <img src="image/tl3.webp" alt="" style="width: 100%; height: 250px;">
+          <a style=" font-size: 17px; line-height: 50px; text-decoration: none; padding-left: 30px; color: black;"
+            href="">Áo polo hàng hiệu đẹp giá rẻ</a> <br>
+          <div style="color: red; font-weight: 800 ; padding-left: 90px;"> 99.000đ
+            <span
+              style="color: #acb2b0; text-decoration: line-through;font-size: 15px;font-weight: 400;margin-left: 10px">270.000đ</span>
+          </div>
+        </div>
+        <div class='imgpc1' style="width:25%; height: 300px; margin:50px 100px 0 20px">
+          <img src="image/tl4.webp" alt="" style="width: 100%; height: 350px;">
+
+        </div>
+      </div>
+     
+    </section>
+
+  </main>
+ 
+  <footer class="foooter">
+    <div class="foooter1">
+      <h3>SHOWROOM HIDDLE</h3>
+      <div class="foooter1-text1">
+        <p>Cơ sở I: 840 Trần Cao Vân , TP. Đà Nẵng, Hà Nội</p>
+        <p>Cơ sở II: VINCOM Hà Nội ( sắp mở cửa )</p>
+        <p>Cơ sở III: RAYMA TOWN 73-75 Ng Chánh. Quảng Ngãi</p>
+        <p>Hotline mua hàng: 0931247957</p>
+        <p>Email hỗ trợ: thanhnvpd09249@fpt.edu.vn</p>
+      </div>
+    </div>
+    <div class="foooter2">
+      <h3>Đăng kí nhận khuyến mãi </h3>
+      <div class="fomt1">
+        <input type="text" class="text1" placeholder="Nhập tên của bạn">
+        <h3>CHÍNH SÁCH CỬA HÀNG</h3>
+        <p>Chính sách bảo mật</p>
+        <p>Chính sách vận chuyển</p>
+        <p>Chính sách đổi trả</p>
+        <p>Quy định sử dụng</p>
+        <p>Chính Sách Bảo Hành</p>
+      </div>
+      <div class="fomt2">
+        <input type="text" class="text2" placeholder="Nhập Email">
+        <h3>THÔNG TIN KHÁC</h3>
+        <p>Tìm kiếm</p>
+        <p>Giới thiệu</p>
+        <p>Tuyển dụng</p>
+      </div>
+      <div class="fomt3">
+        <input type="button" class="text3" value="Đăng ký ngay">
+        <h3>KHÁCH HÀNG</h3>
+        <p>Hướng dẫn mua hàng </p>
+        <p>Hướng dẫn thanh toán</p>
+        <p>Hướng dẫn giao nhận </p>
+        <p>Điều khoản dịch vụ</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
